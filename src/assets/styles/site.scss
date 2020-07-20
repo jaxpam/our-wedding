@@ -1,1 +1,28 @@
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap"; // replace with indvidual Bootstrap assets!
+
+.section {
+    @include media-breakpoint-up(md) {
+        position: relative;
+
+        &__background-img {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: -$grid-gutter-width;
+            right: -$grid-gutter-width;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .col {
+            // We have to override Bootstrap here, to allow image stretch above.
+            position: static;
+        }
+    }
+
+    &__background-img {
+        @include img-fluid;
+    }
+
+}
