@@ -1,4 +1,19 @@
+$font-family-base: 'EB Garamond';
 @import "~bootstrap/scss/bootstrap"; // replace with individual Bootstrap assets!
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+@font-face {
+    font-family: "Winterlady";
+    src: 
+        url("/fonts/Winterlady.woff2") format("woff2"),
+        url("/fonts/Winterlady.woff") format("woff"),
+        url("/fonts/Winterlady.ttf") format("ttf");
+  }
+
+h1, h2 {
+    font-family: 'Winterlady';
+    line-height: 2.3;
+}
 
 .section {
     @include media-breakpoint-up(md) {
@@ -8,8 +23,8 @@
             object-fit: cover;
             position: absolute;
             top: 0;
-            left: -$grid-gutter-width;
-            right: -$grid-gutter-width;
+            left: 0;
+            right: 0;
             right: 0;
             bottom: 0;
             z-index: -1;
@@ -23,6 +38,11 @@
 
     &__background-img {
         @include img-fluid;
+    }
+
+    &--dark {
+        color: white;
+        background-color: #403F3F80;
     }
 
 }
