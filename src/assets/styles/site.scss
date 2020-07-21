@@ -4,45 +4,89 @@ $font-family-base: 'EB Garamond';
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 @font-face {
     font-family: "Winterlady";
-    src: 
-        url("/fonts/Winterlady.woff2") format("woff2"),
-        url("/fonts/Winterlady.woff") format("woff"),
-        url("/fonts/Winterlady.ttf") format("ttf");
-  }
+    src: url("/fonts/Winterlady.woff2") format("woff2"), url("/fonts/Winterlady.woff") format("woff"), url("/fonts/Winterlady.ttf") format("ttf");
+}
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Winterlady';
     line-height: 2.3;
 }
+$sectionBlock: 'section';
 
-.section {
+.#{$sectionBlock} {
     @include media-breakpoint-up(md) {
         position: relative;
-
-        &__background-img {
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-
-        .col {
-            // We have to override Bootstrap here, to allow image stretch above.
-            position: static;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-top: 97px;
+        padding-bottom: 87px;
+      //  height: 100vh;
     }
 
-    &__background-img {
-        @include img-fluid;
+    &__content {
+        padding: ($grid-gutter-width / 2) 2rem;
+        // Ensure contet stands in front of overlay.
+        position: relative;
+        z-index: 1;
     }
 
     &--dark {
-        color: white;
+        @include media-breakpoint-up(md) {
+            background-image: url('../img/us-960.jpg');
+            background-size: cover;
+        }
+
+        @include media-breakpoint-up(md) {
+            background-image: url('../img/us-960.jpg');
+            background-size: cover;
+        }
         background-color: #403F3F80;
+        color: white;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #403F3F80;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
     }
 
+    &--light {
+        @include media-breakpoint-up(md) {
+            .#{$sectionBlock}__content {
+                padding-top: 205px;
+                padding-bottom: 319px;
+                max-height: calc(100vh - 319px);
+                text-align: center;
+                background-color: #8D987D80;
+            }
+        }
+    }
+
+}
+
+.flower {
+    position: absolute;
+
+    &--small {
+        @include media-breakpoint-up(md) {
+            display: inline;
+            padding-top: 205px;
+            top: -80px;
+            right: -57px;
+        }
+        display: none;
+    }
+
+    &--big {
+        bottom: -100px;
+        right: -20px;
+        width: 50%;
+    }
 }
