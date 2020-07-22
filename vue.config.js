@@ -31,10 +31,10 @@ module.exports = {
     // },
     configureWebpack: {
       plugins: [
-        new PrerenderSPAPlugin({
-            staticDir: path.join(__dirname, 'dist'),
-            routes: [ '/' ],
-          }),
+        // new PrerenderSPAPlugin({
+        //     staticDir: path.join(__dirname, 'dist'),
+        //     routes: [ '/' ],
+        //   }),
           new ImageminPlugin({
             cache: true,
             imageminOptions: {
