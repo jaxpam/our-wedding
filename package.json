@@ -10,7 +10,6 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
-    "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
@@ -38,6 +37,7 @@
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "prerender-spa-plugin": "^3.4.0"
   }
 }
