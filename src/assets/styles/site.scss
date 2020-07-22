@@ -4,12 +4,13 @@ $font-family-base: 'EB Garamond';
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 @font-face {
     font-family: "Winterlady";
+    font-display: swap;
     src: url("/fonts/Winterlady.woff2") format("woff2"), url("/fonts/Winterlady.woff") format("woff"), url("/fonts/Winterlady.ttf") format("ttf");
 }
 
 h1,
 h2 {
-    font-family: 'Winterlady';
+    font-family: 'Winterlady', 'Garamond';
     line-height: 2.3;
 }
 $sectionBlock: 'section';
