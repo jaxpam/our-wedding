@@ -32,7 +32,7 @@
           </div>
           <footer id="footnote-*">* more details to come</footer>
         </section>
-        <section  class="section section--dark col-md-6 order-md-2">
+        <section  class="section section--dark col-md-6">
           <div class="section__content my-5">
             <h2>Stephen & Jacquie</h2>
             <img
