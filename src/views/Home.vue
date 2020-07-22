@@ -32,7 +32,7 @@
           </div>
           <footer id="footnote-*">* more details to come</footer>
         </section>
-        <section  class="section section--dark col-md-6">
+        <section class="section section--dark col-md-6">
           <div class="section__content my-5">
             <h2>Stephen & Jacquie</h2>
             <img
@@ -43,7 +43,7 @@
               srcset="
                 ../assets/img/us-375.jpg  375w,
                 ../assets/img/us-960.jpg  960w,
-                ../assets/img/us.jpg     1080w
+                ../assets/img/us.jpg 1080w
               "
             />
             <p>
