@@ -1,14 +1,14 @@
 <template>
   <main>
-    <b-container fluid class="px-0">
-      <b-row no-gutters>
-        <b-col order-md="2" md="6" tag="section" class="section section--light">
+    <div class="container-fluid px-0">
+      <div class="row no-gutters">
+        <section class="section section--light col-md-6 order-md-2">
           <div class="section__content">
             <img
               alt="Small white wedding flower."
               width="224"
               height="478"
-              src="../assets/img/small-flower.svg"
+              src="../assets/img/small-flower.png"
               class="flower flower--small"
             />
             <h1>
@@ -26,13 +26,13 @@
             </button>
             <img
               alt="Large white wedding flower."
-              src="../assets/img/big-flower.svg"
+              src="../assets/img/big-flower.png"
               class="flower flower--big"
             />
           </div>
           <footer id="footnote-*">* more details to come</footer>
-        </b-col>
-        <b-col md="6" tag="section" class="section section--dark">
+        </section>
+        <section  class="section section--dark col-md-6 order-md-2">
           <div class="section__content my-5">
             <h2>Stephen & Jacquie</h2>
             <img
@@ -51,9 +51,9 @@
               <br />celebrate our wedding day with you!
             </p>
           </div>
-        </b-col>
-      </b-row>
-    </b-container>
+        </section>
+      </div>
+    </div>
   </main>
 </template>
 <script lang="ts">

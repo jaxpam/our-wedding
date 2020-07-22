@@ -10,6 +10,15 @@ module.exports = {
       new PrerenderSPAPlugin({
           staticDir: path.join(__dirname, 'dist'),
           routes: [ '/' ],
+          useRenderEvent: true,
+          headless: true,
+          onlyProduction: true,
+          postProcess: route => {
+            route.html = route.html
+              .replace(/<script (.*?)>/g, '<script $1 defer>')
+              .replace('id="app"', 'id="app" data-server-rendered="true"');
+            return route;
+          }
         }),
       new ImageminPlugin({
         cache: true,
