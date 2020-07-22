@@ -17,9 +17,13 @@
             </h1>
             <div class="pb-3">
               <address class="h3">Conniston, The Lakes</address>
-              <time class="h5" datetime="2021-05-29T13:00:00.000Z">Saturday, May 29th, 2012</time>
+              <time class="h5" datetime="2021-05-29T13:00:00.000Z"
+                >Saturday, May 29th, 2012</time
+              >
             </div>
-            <button class="btn btn-primary" type="button">Add date to calendar</button>
+            <button class="btn btn-primary" type="button">
+              Add date to calendar
+            </button>
             <img
               alt="Large white wedding flower."
               src="../assets/img/big-flower.svg"
@@ -36,7 +40,11 @@
               alt="Ste & Jax enjoy the sun in Berlin."
               src="../assets/img/us.jpg"
               sizes="(max-width: 376px) 100vw, (max-width: 576px) 50vw"
-              srcset="../assets/img/us-375.jpg 375w, ../assets/img/us-960.jpg 960w, ../assets/img/us.jpg 1080w"
+              srcset="
+                ../assets/img/us-375.jpg  375w,
+                ../assets/img/us-960.jpg  960w,
+                ../assets/img/us.jpg     1080w
+              "
             />
             <p>
               Thanks for stopping by, we can't wait to

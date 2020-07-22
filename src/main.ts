@@ -4,7 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import "./assets/styles/site.scss";
 
-import { LayoutPlugin } from 'bootstrap-vue'
+import { LayoutPlugin } from "bootstrap-vue";
 
 Vue.config.productionTip = false;
 
