@@ -1,104 +1,96 @@
-$font-family-base: 'EB Garamond';
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/reboot";
-
+@import "settings";
 
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities/display";
 @import "~bootstrap/scss/utilities/flex";
 @import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/screenreaders";
 
 @import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/forms";
 
+.img-fluid {
+  @include img-fluid();
+}
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap");
 @font-face {
-    font-family: "Winterlady";
-    font-display: swap;
-    src: url("/fonts/Winterlady.woff2") format("woff2"), url("/fonts/Winterlady.woff") format("woff"), url("/fonts/Winterlady.ttf") format("ttf");
+  font-family: "Winterlady";
+  font-display: swap;
+  src: url("/fonts/Winterlady.woff2") format("woff2"),
+    url("/fonts/Winterlady.woff") format("woff"),
+    url("/fonts/Winterlady.ttf") format("ttf");
+}
+
+@include media-breakpoint-up(md) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.75em;
+  }
 }
 
 h1,
 h2 {
-    font-family: 'Winterlady', 'Garamond';
-    line-height: 2.3;
-}
-$sectionBlock: 'section';
-
-.#{$sectionBlock} {
-    @include media-breakpoint-up(md) {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-top: 97px;
-        padding-bottom: 87px;
-    }
-
-    &__content {
-        padding: ($grid-gutter-width / 2) 2rem;
-        // Ensure contet stands in front of overlay.
-        position: relative;
-        z-index: 1;
-    }
-
-    &--dark {
-        @include media-breakpoint-up(md) {
-            background-image: url('../img/us-960.jpg');
-            background-size: cover;
-        }
-
-        @include media-breakpoint-up(md) {
-            background-image: url('../img/us-960.jpg');
-            background-size: cover;
-        }
-        background-color: #403F3F80;
-        color: white;
-
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            background-color: #403F3F80;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-        }
-    }
-
-    &--light {
-        @include media-breakpoint-up(md) {
-            .#{$sectionBlock}__content {
-                padding-top: 205px;
-                padding-bottom: 319px;
-                max-height: calc(100vh - 319px);
-                text-align: center;
-                background-color: #8D987D80;
-            }
-        }
-    }
-
+  font-family: "Winterlady", "Garamond";
+  line-height: 2.8;
 }
 
-.flower {
+.hero {
+  position: relative;
+  min-height: 100px;
+
+  &__img {
     position: absolute;
+    width: auto;
+    height: auto;
+    max-height: none;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+  }
 
-    &--small {
-        @include media-breakpoint-up(md) {
-            display: inline;
-            padding-top: 205px;
-            top: -80px;
-            right: -57px;
-        }
-        display: none;
-    }
+  @include media-breakpoint-up(md) {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 107%, 0 129.66%);
 
-    &--big {
-        bottom: -100px;
-        right: -20px;
-        width: 50%;
+    &__body {
+      clip-path: polygon(10% 0px, 100% 0px, 90% 100%, 0px 100%);
+      padding: 10px 60px;
+      margin-bottom: -47px;
+      z-index: 1;
     }
+  }
+}
+
+.theme {
+  &--primary {
+    background-color: #f5b700;
+  }
+
+  &--secondary {
+    background-color: #465741;
+    color: #f1fffa;
+  }
+
+  &--tertiary {
+    background-color: #141217;
+    color: #f1fffa;
+  }
 }

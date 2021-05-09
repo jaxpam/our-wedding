@@ -1,0 +1,16 @@
+$spacer: 2rem;
+$enable-rounded: false;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 1.1;
+$h2-font-size: $font-size-base * 1;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1;
+
+$font-family-base: "EB Garamond";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";

@@ -1,59 +1,101 @@
 <template>
   <main>
-    <div class="container-fluid px-0">
-      <div class="row no-gutters">
-        <section class="section section--light col-md-6 order-md-2">
-          <div class="section__content">
-            <img
-              alt="Small white wedding flower."
-              width="224"
-              height="478"
-              src="../assets/img/small-flower.png"
-              class="flower flower--small"
-            />
-            <h1>
-              Save the date
-              <a href="#footnote-*">*</a>
-            </h1>
-            <div class="pb-3">
-              <address class="h3">Conniston, The Lakes</address>
-              <time class="h5" datetime="2021-05-29T13:00:00.000Z"
-                >Saturday, May 29th, 2012</time
-              >
-            </div>
-            <button class="btn btn-primary" type="button">
-              Add date to calendar
-            </button>
-            <img
-              alt="Large white wedding flower."
-              src="../assets/img/big-flower.png"
-              class="flower flower--big"
-            />
+    <section id="save-the-date">
+      <div class="hero">
+        <img
+          class="img-fluid hero__img"
+          alt="Ste and Jax hands holding on the day of their wedding"
+          src="../assets/img/Jax&Ste-56.jpg"
+          sizes="(max-width: 376px) 100vw, (max-width: 576px) 50vw"
+          srcset="
+            ../assets/img/Jax&Ste-56-375.jpg  375w,
+            ../assets/img/Jax&Ste-56-960.jpg  960w,
+            ../assets/img/Jax&Ste-56.jpg     1080w
+          "
+        />
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <div class="col-12 col-lg-6"></div>
           </div>
-          <footer id="footnote-*">* more details to come</footer>
-        </section>
-        <section class="section section--dark col-md-6">
-          <div class="section__content my-5">
-            <h2>Stephen & Jacquie</h2>
-            <img
-              class="d-md-none img-fluid"
-              alt="Ste & Jax enjoy the sun in Berlin."
-              src="../assets/img/us.jpg"
-              sizes="(max-width: 376px) 100vw, (max-width: 576px) 50vw"
-              srcset="
-                ../assets/img/us-375.jpg  375w,
-                ../assets/img/us-960.jpg  960w,
-                ../assets/img/us.jpg 1080w
-              "
-            />
-            <p>
-              Thanks for stopping by, we can't wait to
-              <br />celebrate our wedding day with you!
-            </p>
-          </div>
-        </section>
+        </div>
       </div>
-    </div>
+      <div class="theme--tertiary">
+        <div class="container">
+          <div class="row pt-1 pt-lg-5">
+            <div class="col-12 col-lg-6">
+              <h1>Stephen & Jacquie's Wedding Reception</h1>
+              <p>
+                2020 was a strange year for everyone and a stranger year to get
+                married! We're sorry we couldn't have you with us when when we
+                tied the knot, but we would still love celebrate our nuptials
+                with everyone.
+              </p>
+              <p>
+                We decided to postpone what was going to be our wedding and turn
+                it into a celebration a year later. We can't forsee what
+                restrictions will be like, but we hope, all being well, you can
+                join us for a party in The Lakes on 28th May 2022.
+              </p>
+              <p>
+                Given our professions we've opted to send invites digitally. You
+                can register your email below, and we'll provide an RSVP with
+                more details nearer to the time.
+              </p>
+              <form class="pb-2">
+                <h3>Get registered</h3>
+                <div class="form-group">
+                  <label for="form-email">Your Email</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="form-email"
+                    placeholder="We'll contact you via this"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Your Name/Family Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="form-name"
+                    placeholder="What we will know you by"
+                  />
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-warning theme--primary">
+                    Register
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="bookmark theme--secondary">
+                <h2>Save the Date</h2>
+                <div class="pb-3">
+                  <time class="h3" datetime="2021-05-29T13:00:00.000Z"
+                    >Saturday, May 28th, 2022</time
+                  >
+                  <address class="h5">Conniston, The Lakes</address>
+                </div>
+              </div>
+              <picture class="img-fluid">
+                <source
+                  class="img-fluid"
+                  srcset="../assets/img/Jax&Ste-51.jpg"
+                  media="(min-width: 400px)"
+                />
+                <source
+                  class="img-fluid"
+                  srcset="../assets/img/Jax&Ste-47.jpg"
+                  media="(max-width: 400px)"
+                />
+                <img class="img-fluid" src="../assets/img/Jax&Ste-47.jpg" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 <script lang="ts">
@@ -61,3 +103,19 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class App extends Vue {}
 </script>
+
+<style lang="scss">
+@import "../assets/styles/settings.scss";
+
+.bookmark {
+  position: absolute;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 84.87%, 0px 100%);
+  padding: 15px;
+  text-align: right;
+
+  @include media-breakpoint-up(md) {
+    top: -150px;
+    right: 14px;
+  }
+}
+</style>
