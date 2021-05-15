@@ -79,17 +79,18 @@
               <picture class="img-fluid">
                 <source
                   class="img-fluid"
-                  :srcset="require('@/assets/img/Jax&Ste-51.jpg')"
-                  media="(min-width: 400px)"
+                  :srcset="require('@/assets/img/Jax&Ste-51.jpg?srcset&format=webp')"
+                  media="(min-width: 415px)"
                 />
                 <source
                   class="img-fluid"
-                  :srcset="require('@/assets/img/Jax&Ste-47.jpg')"
-                  media="(max-width: 400px)"
+                  :srcset="require('@/assets/img/Jax&Ste-47.jpg?srcset&format=webp')"
+                  media="(max-width: 415px)"
                 />
                 <img
                   class="img-fluid"
-                  :src:src="require('@/assets/img/Jax&Ste-47.jpg')"
+                  width="540"
+                  :srcset="require('@/assets/img/Jax&Ste-51.jpg?srcset')"
                   alt="Jax and Ste walking down the steps of St. Georges Hall, Liverpool after getting married."
                 />
               </picture>
