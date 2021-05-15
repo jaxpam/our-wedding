@@ -1,17 +1,9 @@
 const path = require("path");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
-const purgecss = require("@fullhuman/postcss-purgecss");
-
 const plugins = [];
 
 if (process.env.NODE_ENV === "production") {
   plugins.push(
-    purgecss({
-      content: [
-        "./views/**/*.vue"
-      ],
-      whitelist: ["html", "body"]
-    }),
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, "dist"),
       routes: ["/"],
