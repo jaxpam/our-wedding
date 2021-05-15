@@ -5,13 +5,11 @@
         <img
           class="img-fluid hero__img"
           alt="Ste and Jax hands holding on the day of their wedding"
-          src="../assets/img/Jax&Ste-56.jpg"
-          sizes="(max-width: 376px) 100vw, (max-width: 576px) 50vw"
-          srcset="
-            ../assets/img/Jax&Ste-56-375.jpg  375w,
-            ../assets/img/Jax&Ste-56-960.jpg  960w,
-            ../assets/img/Jax&Ste-56.jpg     1080w
-          "
+          :style="{
+            backgroundImage: `url('${require('@/assets/img/Jax&Ste-56.jpg?placeholder')}')`,
+          }"
+          :src="require('@/assets/img/Jax&Ste-56.jpg')"
+          :srcset="require('@/assets/img/Jax&Ste-56.jpg?srcset&format=webp')"
         />
         <div class="container">
           <div class="row flex-row-reverse">
@@ -81,15 +79,18 @@
               <picture class="img-fluid">
                 <source
                   class="img-fluid"
-                  srcset="../assets/img/Jax&Ste-51.jpg"
+                  :srcset="require('@/assets/img/Jax&Ste-51.jpg')"
                   media="(min-width: 400px)"
                 />
                 <source
                   class="img-fluid"
-                  srcset="../assets/img/Jax&Ste-47.jpg"
+                  :srcset="require('@/assets/img/Jax&Ste-47.jpg')"
                   media="(max-width: 400px)"
                 />
-                <img class="img-fluid" src="../assets/img/Jax&Ste-47.jpg" />
+                <img
+                  class="img-fluid"
+                  :src:src="require('@/assets/img/Jax&Ste-47.jpg')"
+                />
               </picture>
             </div>
           </div>
