@@ -2,23 +2,23 @@ const path = require("path");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
 const plugins = [];
 
-if (process.env.NODE_ENV === "production") {
-  plugins.push(
-    new PrerenderSPAPlugin({
-      staticDir: path.join(__dirname, "dist"),
-      routes: ["/"],
-      useRenderEvent: true,
-      headless: true,
-      onlyProduction: true,
-      postProcess: route => {
-        route.html = route.html
-          .replace(/<script (.*?)>/g, "<script $1 defer>")
-          .replace('id="app"', 'id="app" data-server-rendered="true"');
-        return route;
-      }
-    })
-  );
-}
+// if (process.env.NODE_ENV === "production") {
+//   plugins.push(
+//     new PrerenderSPAPlugin({
+//       staticDir: path.join(__dirname, "dist"),
+//       routes: ["/"],
+//       useRenderEvent: true,
+//       headless: true,
+//       onlyProduction: true,
+//       postProcess: route => {
+//         route.html = route.html
+//           .replace(/<script (.*?)>/g, "<script $1 defer>")
+//           .replace('id="app"', 'id="app" data-server-rendered="true"');
+//         return route;
+//       }
+//     })
+//   );
+// }
 
 module.exports = {
   productionSourceMap: false,
