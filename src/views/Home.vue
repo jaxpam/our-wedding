@@ -6,7 +6,7 @@
           class="img-fluid hero__img"
           alt="Ste and Jax hands holding on the day of their wedding"
           :style="{
-            backgroundImage: `url('${require('@/assets/img/Jax&Ste-56.jpg?placeholder')}')`,
+            backgroundImage: `url('${require('@/assets/img/Jax&Ste-56.jpg?placeholder')}')`
           }"
           :src="require('@/assets/img/Jax&Ste-56.jpg')"
           :srcset="require('@/assets/img/Jax&Ste-56.jpg?srcset&format=webp')"
