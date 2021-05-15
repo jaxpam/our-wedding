@@ -40,7 +40,7 @@
                 more details nearer to the time.
               </p>
               <form class="pb-2">
-                <h3>Get registered</h3>
+                <h2 >Get Registered</h2>
                 <div class="form-group">
                   <label for="form-email">Your Email</label>
                   <input
@@ -90,6 +90,7 @@
                 <img
                   class="img-fluid"
                   :src:src="require('@/assets/img/Jax&Ste-47.jpg')"
+                  alt="Jax and Ste walking down the steps of St. Georges Hall, Liverpool after getting married."
                 />
               </picture>
             </div>
