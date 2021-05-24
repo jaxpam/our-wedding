@@ -29,8 +29,8 @@
                 with everyone.
               </p>
               <p>
-                As we postponed what was going to be our wedding and turn
-                it into a celebration a year later. We can't forsee what
+                As we postponed what was going to be our wedding and turn it
+                into a celebration a year later. We can't forsee what
                 restrictions will be like, but we hope, all being well, you can
                 join us for a party in The Lakes on 28th May 2022.
               </p>
@@ -39,7 +39,10 @@
                 can register your email below, and we'll provide an RSVP with
                 more details nearer to the time.
               </p>
-              <iframe src="https://cdn.forms-content.sg-form.com/d313292d-b992-11eb-991d-bed3631b86b2" style="border: 0;width: 100%;height: 380px;"></iframe>
+              <iframe
+                src="https://cdn.forms-content.sg-form.com/d313292d-b992-11eb-991d-bed3631b86b2"
+                style="border: 0;width: 100%;height: 380px;"
+              ></iframe>
             </div>
             <div class="col-12 col-lg-6">
               <div class="bookmark theme--secondary">
@@ -54,12 +57,16 @@
               <picture class="img-fluid">
                 <source
                   class="img-fluid"
-                  :srcset="require('@/assets/img/Jax&Ste-51.jpg?srcset&format=webp')"
+                  :srcset="
+                    require('@/assets/img/Jax&Ste-51.jpg?srcset&format=webp')
+                  "
                   media="(min-width: 415px)"
                 />
                 <source
                   class="img-fluid"
-                  :srcset="require('@/assets/img/Jax&Ste-47.jpg?srcset&format=webp')"
+                  :srcset="
+                    require('@/assets/img/Jax&Ste-47.jpg?srcset&format=webp')
+                  "
                   media="(max-width: 415px)"
                 />
                 <img

@@ -34,7 +34,7 @@ module.exports = {
     name: "Ste & Jax Wedding",
     themeColor: "#0640b6"
   },
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     config.module
       .rule("images-srcset")
       .before("images")
@@ -46,7 +46,7 @@ module.exports = {
       .loader("webpack-image-srcset-loader")
       .options({
         sizes: ["375w", "1024w", "1920w", "2560w", "original"],
-        esModule: false,
+        esModule: false
       });
 
     config.module
@@ -68,10 +68,10 @@ module.exports = {
               ...defaultFileLoaderOptionsGenerator(
                 options,
                 existingOptions.fallback.options
-              ),
-            },
-          },
-        }),
+              )
+            }
+          }
+        })
       });
 
     config.module
@@ -106,5 +106,5 @@ module.exports = {
       );
 
     config.module.rule("images").uses.delete("url-loader");
-  },
+  }
 };
