@@ -29,7 +29,7 @@
                 with everyone.
               </p>
               <p>
-                We decided to postpone what was going to be our wedding and turn
+                As we postponed what was going to be our wedding and turn
                 it into a celebration a year later. We can't forsee what
                 restrictions will be like, but we hope, all being well, you can
                 join us for a party in The Lakes on 28th May 2022.
@@ -39,32 +39,7 @@
                 can register your email below, and we'll provide an RSVP with
                 more details nearer to the time.
               </p>
-              <form class="pb-2">
-                <h2 >Get Registered</h2>
-                <div class="form-group">
-                  <label for="form-email">Your Email</label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    id="form-email"
-                    placeholder="We'll contact you via this"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="form-email">Your Name/Family Name</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="form-name"
-                    placeholder="What we will know you by"
-                  />
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-warning theme--primary">
-                    Register
-                  </button>
-                </div>
-              </form>
+              <iframe src="https://cdn.forms-content.sg-form.com/d313292d-b992-11eb-991d-bed3631b86b2" style="border: 0;width: 100%;height: 380px;"></iframe>
             </div>
             <div class="col-12 col-lg-6">
               <div class="bookmark theme--secondary">
@@ -116,7 +91,7 @@ export default class App extends Vue {}
   padding: 15px;
   text-align: right;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     top: -150px;
     right: 14px;
   }
