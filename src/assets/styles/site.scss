@@ -14,7 +14,7 @@
   @include img-fluid();
 }
 
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 @font-face {
   font-family: "Winterlady";
   font-display: swap;
@@ -86,11 +86,11 @@ h2 {
 
   &--secondary {
     background-color: #465741;
-    color: #f1fffa;
+    color: #FFF;
   }
 
   &--tertiary {
     background-color: #141217;
-    color: #f1fffa;
+    color: #FFF;
   }
 }
