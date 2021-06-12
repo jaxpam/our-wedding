@@ -21,25 +21,25 @@
         <div class="container">
           <div class="row pt-1 pt-lg-5">
             <div class="col-12 col-lg-6">
-              <h1>Stephen & Jacquie's Wedding Reception</h1>
+              <h1>Stephen & Jacquie's Wedding Blessing</h1>
               <p>
                 2020 was an interesting year! Due to restrictions and the
-                uncertainty of our May 2021 wedding, we decided to tie the knot.
+                uncertainty of our May 2021 wedding and having little Lark on the way, we decided to tie the knot earlier than anticipated.
               </p>
               <p>
                 We're sorry we couldn't have you with us when we said 'I
-                Do', but we would still love to celebrate our nuptials with you.
+                Do', but we would still love to celebrate our wedding day with you.
               </p>
               <p>
-                As we postponed what was going to be our wedding and turn it
-                into a celebration a year later. We can't forsee what
-                restrictions will be like in the next year, but we hope all
+                As we postponed what was going to be our wedding, and turn it
+                into a celebration a year later, we can't forsee what
+                restrictions will be like in the next year. But, we hope all
                 being well, you can join us for a party in The Lakes on 28th May
                 2022.
               </p>
               <p>
                 Given our professions, and that we're trying to be a little more
-                eco-friendly, we've opted to send invites digitally. You can
+                frugal, we've opted to send invites digitally. You can
                 register your email below, and we'll provide more details, along
                 with an RSVP, nearer to the time.
               </p>
@@ -50,10 +50,10 @@
             </div>
             <div class="col-12 col-lg-6">
               <div class="bookmark theme--secondary">
-                <h2>Save the Date</h2>
+                <h2>Save our Date</h2>
                 <div class="pb-3">
                   <time class="h3" datetime="2021-05-29T13:00:00.000Z"
-                    >Saturday, May 28th, 2022</time
+                    >Saturday, May 28th 2022</time
                   >
                   <address class="h5">Coniston, The Lakes</address>
                 </div>
@@ -99,7 +99,7 @@ export default class App extends Vue {}
 .bookmark {
   position: absolute;
   clip-path: polygon(0px 0px, 100% 0px, 100% 84.87%, 0px 100%);
-  padding: 15px;
+  padding: 20px 15px;
   text-align: right;
 
   @include media-breakpoint-up(lg) {

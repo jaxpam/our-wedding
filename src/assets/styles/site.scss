@@ -14,7 +14,7 @@
   @include img-fluid();
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@100&display=swap');
 
 @include media-breakpoint-up(md) {
   body {
@@ -23,7 +23,7 @@
 
   h1,
   .h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h2,
@@ -35,7 +35,7 @@
 h1,
 h2 {
   font-family: 'Playfair Display', serif;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .hero {
