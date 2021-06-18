@@ -21,7 +21,7 @@
         <div class="container">
           <div class="row pt-1 pt-lg-5">
             <div class="col-12 col-lg-6">
-              <h1>Stephen & Jacquie's Wedding Blessing</h1>
+              <h1>Stephen & Jacquie's Wedding Celebration</h1>
               <p>
                 2020 was an interesting year! Due to restrictions and the
                 uncertainty of our May 2021 wedding and having little Lark on the way, we decided to tie the knot earlier than anticipated.
