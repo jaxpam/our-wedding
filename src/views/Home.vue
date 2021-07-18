@@ -23,32 +23,26 @@
             <div class="col-12 col-lg-6">
               <h1>Stephen & Jacquie's Wedding Celebration</h1>
               <p>
-                2020 was an interesting year! Due to restrictions and the
-                uncertainty of our May 2021 wedding and having little Lark on the way, we decided to tie the knot earlier than anticipated.
+                2020 was a strange year and was a stranger one to get married!
+                We originally planned to get married in 2021, then postponed to
+                2022 then we thought "Heck, let's just do it!".
               </p>
               <p>
-                We're sorry we couldn't have you with us when we said 'I
-                Do', but we would still love to celebrate our wedding day with you.
+                We're sorry you couldn't be there with us when we said I do, but
+                we would still love to celebrate with you (and your family).
               </p>
               <p>
-                As we postponed what was going to be our wedding, and turn it
-                into a celebration a year later, we can't forsee what
-                restrictions will be like in the next year. But, we hope all
-                being well, you can join us for a party in The Lakes on 28th May
-                2022.
-              </p>
-              <p>
-                Given our professions, and that we're trying to be a little more
-                frugal, we've opted to send invites digitally. You can
-                register your email below, and we'll provide more details, along
-                with an RSVP, nearer to the time.
+                If you can register below we'll presume your interest and send
+                updates and RSVP's nearer to the time. Things will of course be
+                'government restrictions' permitting. Hopefully, some normality
+                will be here before then!
               </p>
               <iframe
                 src="https://cdn.forms-content.sg-form.com/d313292d-b992-11eb-991d-bed3631b86b2"
-                style="border: 0;width: 100%;height: 400px;"
+                style="border: 0; width: 100%; height: 400px"
               ></iframe>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
               <div class="bookmark theme--secondary">
                 <h2>Save our Date</h2>
                 <div class="pb-3">
@@ -69,7 +63,7 @@
                 <source
                   class="img-fluid"
                   :srcset="
-                    require('@/assets/img/Jax&Ste-47.jpg?srcset&format=webp')
+                    require('@/assets/img/Jax&Ste-34.jpg?srcset&format=webp')
                   "
                   media="(max-width: 415px)"
                 />
@@ -80,6 +74,18 @@
                   alt="Jax and Ste walking down the steps of St. Georges Hall, Liverpool after getting married."
                 />
               </picture>
+              <img
+                class="img-fluid overlay-euc-left"
+                width="200"
+                :srcset="require('@/assets/img/euc-01.svg?srcset')"
+                alt="Wildflower"
+              />
+              <img
+                class="img-fluid overlay-euc-right"
+                width="150"
+                :srcset="require('@/assets/img/euc-02.svg?srcset')"
+                alt="Wildflower"
+              />
             </div>
           </div>
         </div>
@@ -106,5 +112,17 @@ export default class App extends Vue {}
     top: -150px;
     right: 14px;
   }
+}
+
+.overlay-euc-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.overlay-euc-right {
+  position: absolute;
+  top: 100px;
+  right: 0;
 }
 </style>
