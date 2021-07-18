@@ -44,10 +44,10 @@
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center">
               <div class="bookmark theme--secondary">
-                <h2>Save the Date</h2>
+                <h2>Save our Date</h2>
                 <div class="pb-3">
                   <time class="h3" datetime="2021-05-29T13:00:00.000Z"
-                    >Saturday, May 28th, 2022</time
+                    >Saturday, May 28th 2022</time
                   >
                   <address class="h5">Coniston, The Lakes</address>
                 </div>
@@ -105,7 +105,7 @@ export default class App extends Vue {}
 .bookmark {
   position: absolute;
   clip-path: polygon(0px 0px, 100% 0px, 100% 84.87%, 0px 100%);
-  padding: 15px;
+  padding: 20px 15px;
   text-align: right;
 
   @include media-breakpoint-up(lg) {
