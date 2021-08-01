@@ -14,7 +14,7 @@
   @include img-fluid();
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@100&display=swap");
 
 @include media-breakpoint-up(md) {
   body {
@@ -34,7 +34,7 @@
 
 h1,
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   line-height: 1.5;
 }
 
@@ -79,11 +79,20 @@ h2 {
 
   &--secondary {
     background-color: #465741;
-    color: #FFF;
+    color: #fff;
   }
 
   &--tertiary {
     background-color: #141217;
-    color: #FFF;
+    color: #fff;
+    @media (prefers-color-scheme: dark) {
+      background-color: #141217;
+      color: #fff;
+    }
+
+    @media (prefers-color-scheme: light) {
+      background-color: #fff;
+      color: #141217;
+    }
   }
 }
