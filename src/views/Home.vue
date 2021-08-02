@@ -4,11 +4,10 @@
       <div class="hero">
         <img
           class="img-fluid hero__img"
+          width="1019"
+          height="423"
           alt="Ste and Jax hands holding on the day of their wedding"
-          :style="{
-            backgroundImage: `url('${require('@/assets/img/Jax&Ste-56.jpg?placeholder')}')`,
-          }"
-          :src="require('@/assets/img/Jax&Ste-56.jpg')"
+          :src="require('@/assets/img/Jax&Ste-56.jpg?placeholder')"
           :srcset="require('@/assets/img/Jax&Ste-56.jpg?srcset&format=webp')"
         />
         <div class="container">
@@ -19,7 +18,7 @@
       </div>
       <div class="theme--tertiary">
         <div class="container">
-          <div class="row pt-1 pt-lg-5">
+          <div class="row pt-1 pt-md-5">
             <div class="col-12 col-lg-6">
               <h1>Stephen & Jacquie's Wedding Celebration</h1>
               <p>
@@ -70,6 +69,7 @@
                 <img
                   class="img-fluid"
                   width="540"
+                  :src="require('@/assets/img/Jax&Ste-51.jpg?placeholder')"
                   :srcset="require('@/assets/img/Jax&Ste-51.jpg?srcset')"
                   alt="Jax and Ste walking down the steps of St. Georges Hall, Liverpool after getting married."
                 />
