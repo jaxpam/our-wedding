@@ -1,9 +1,9 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Stephen & Jacquie's Wedding Celebration",
+    "short_name": "Ste & Jax Wedding Celebration",
     "icons": [
         {
-            "src": "/android-chrome-96x96.png",
+            "src": "/img/icons/android-chrome-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         }
