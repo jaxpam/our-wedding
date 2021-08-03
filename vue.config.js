@@ -1,11 +1,18 @@
 const path = require("path");
 const plugins = [];
 
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+
 module.exports = {
   productionSourceMap: false,
   publicPath: ".",
   configureWebpack: {
-    plugins
+    plugins: [
+      new PrerenderSPAPlugin({
+        staticDir: path.join(__dirname, 'dist'),
+        routes: [ '/' ],
+      })
+    ]
   },
   pwa: {
     workboxPluginMode: "InjectManifest",
