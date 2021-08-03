@@ -37,6 +37,7 @@
                 will be here before then!
               </p>
               <iframe
+                title="Sign up form."
                 src="https://cdn.forms-content.sg-form.com/d313292d-b992-11eb-991d-bed3631b86b2"
                 style="border: 0; width: 100%; height: 365px"
               ></iframe>
