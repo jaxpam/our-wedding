@@ -1,14 +1,20 @@
 {
     "name": "Stephen & Jacquie's Wedding Celebration",
     "short_name": "Ste & Jax Wedding Celebration",
+    "start_url": "/",
     "icons": [
         {
             "src": "/img/icons/android-chrome-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
+        },
+        {
+            "src": "/img/icons/safari-pinned-tab.svg",
+            "sizes": "512x512",
+            "type": "image/svg"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    "theme_color": "#465741",
+    "background_color": "#465741",
+    "display": "minimal-ui"
 }
