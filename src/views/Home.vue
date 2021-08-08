@@ -27,7 +27,7 @@
                 2022 then we thought "Heck, let's just do it!".
               </p>
               <p>
-                We're sorry you couldn't be there with us when we said I do, but
+                We're sorry you couldn't be there with us when we said <em>I do</em>, but
                 we would still love to celebrate with you (and your family).
               </p>
               <p>
