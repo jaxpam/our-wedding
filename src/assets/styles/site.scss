@@ -1,21 +1,20 @@
 @import "settings";
 
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/utilities/display";
-@import "~bootstrap/scss/utilities/flex";
-@import "~bootstrap/scss/utilities/spacing";
-@import "~bootstrap/scss/utilities/screenreaders";
+@import "~bootstrap/scss/bootstrap";
 
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/forms";
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "tertiary": $tertiary,
+    "quaternary": $navy,
+  )
+);
 
 .img-fluid {
   @include img-fluid();
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Playfair+Display:wght@400;700&display=swap");
 @include media-breakpoint-up(md) {
   body {
     font-size: 1.125rem;
@@ -23,77 +22,137 @@
 
   h1,
   .h1 {
-    font-size: 1.8rem;
+    font-size: 5rem;
   }
 
   h2,
   .h2 {
-    font-size: 1.75em;
+    font-size: 4rem;
   }
 }
 
 h1,
 h2 {
+  font-family: "sheenazregular";
+}
+
+h2 {
+  @include media-breakpoint-down(sm) {
+    font-size: 4rem;
+  }
+}
+
+h3,
+h4,
+h5 {
   font-family: "Playfair Display", serif;
   line-height: 1.5;
+  font-weight: $font-weight-normal;
 }
 
-.hero {
-  position: relative;
-  min-height: 100px;
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $font-weight-normal;
+}
 
-  &__img {
-    position: absolute;
-    width: auto;
-    height: auto;
-    max-height: none;
-    max-width: 100%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    z-index: -1;
+small,
+.time {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary;
+  color: $light;
+  padding: 4rem 2rem;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: -2rem;
   }
+}
 
-  @include media-breakpoint-up(md) {
-    min-height: 200px;
+.hero-time {
+  position: relative;
+  text-align: center;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -3rem;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 50%;
+    background-color: $dark;
+    text-align: center;
+  }
+}
+
+.title-underline {
+  position: relative;
+  text-align: center;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -1rem;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 30%;
+    background-color: $dark;
+    text-align: center;
+  }
+}
+
+.card {
+  .card-body {
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    clip-path: polygon(0px 0px, 100% 0px, 100% 107%, 0 129.66%);
-
-    &__body {
-      clip-path: polygon(10% 0px, 100% 0px, 90% 100%, 0px 100%);
-      padding: 10px 60px;
-      margin-bottom: -47px;
-      z-index: 1;
-    }
+    height: 100%;
   }
 }
 
-.theme {
-  &--primary {
-    background-color: #f5b700;
-  }
+.btn {
+  text-transform: uppercase;
+  padding: 1rem;
 
-  &--secondary {
-    background-color: #465741;
-    color: #fff;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    padding: 1rem;
   }
+}
 
-  &--tertiary {
-    background-color: #141217;
-    color: #fff;
-    
-    @media (prefers-color-scheme: dark) {
-      background-color: #141217;
-      color: #fff;
-    }
+.location-img {
+  display: block;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: $dark;
+}
 
-    @media (prefers-color-scheme: light) {
-      background-color: #fff;
-      color: #141217;
-    }
-  }
+.botanical-stem {
+  transform: rotate(10deg);
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: -40%;
+}
+
+.eucalyptus {
+  transform: rotate(10deg);
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: -40%;
 }

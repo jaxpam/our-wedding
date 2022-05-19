@@ -1,7 +1,7 @@
 const path = require("path");
 const plugins = [];
 
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const PrerenderSPAPlugin = require("prerender-spa-plugin");
 
 module.exports = {
   productionSourceMap: false,
@@ -9,20 +9,20 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new PrerenderSPAPlugin({
-        staticDir: path.join(__dirname, 'dist'),
-        routes: [ '/' ],
-      })
-    ]
+        staticDir: path.join(__dirname, "dist"),
+        routes: ["/"],
+      }),
+    ],
   },
   pwa: {
     workboxPluginMode: "InjectManifest",
     workboxOptions: {
-      swSrc: "public/service-worker.js"
+      swSrc: "public/service-worker.js",
     },
-    name: "Ste & Jax Wedding",
-    themeColor: "#0640b6"
+    name: "Dan & Han Wedding",
+    themeColor: "#0640b6",
   },
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.module
       .rule("images-srcset")
       .before("images")
@@ -34,9 +34,8 @@ module.exports = {
       .loader("webpack-image-srcset-loader")
       .options({
         sizes: ["375w", "1024w", "1920w", "2560w", "original"],
-        esModule: false
+        esModule: false,
       });
-
     config.module
       .rule("images-resize")
       .after("images")
@@ -55,13 +54,13 @@ module.exports = {
               ...defaultFileLoaderOptionsGenerator(
                 options,
                 existingOptions.fallback.options
-              )
-            }
-          }
-        })
+              ),
+            },
+          },
+        }),
       });
 
-      config.module
+    config.module
       .rule("images")
       .test(/\.(png|jpe?g|gif|webp|tiff?)$/i)
       // if the import url looks like "some.png?placeholder..."
@@ -75,10 +74,20 @@ module.exports = {
       // if no previous resourceQuery match
       .oneOf("normal")
       .use("normal")
-      .loader(config.module.rule("images").use("url-loader").get("loader"))
-      .options(config.module.rule("images").use("url-loader").get("options"));
+      .loader(
+        config.module
+          .rule("images")
+          .use("url-loader")
+          .get("loader")
+      )
+      .options(
+        config.module
+          .rule("images")
+          .use("url-loader")
+          .get("options")
+      );
 
     // remove `use` now that there is `oneOf`
     config.module.rule("images").uses.delete("url-loader");
-    }
+  },
 };

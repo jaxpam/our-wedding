@@ -3,47 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#465741" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/icons/safari-pinned-tab.svg"
+      color="#333333"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="msapplication-TileColor" content="#465741" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Ste & Jax Wedding Celebration 2022</title>
+    <title>Dan & Han Wedding 2022</title>
 
-    <link rel="canonical" href="https://pammenter.wedding" />
+    <style>
+      @font-face {
+        font-family: "sheenazregular";
+        src: url("/fonts/sheenaz-webfont.woff2") format("woff2"),
+          url("/fonts/sheenaz-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="canonical" href="https://danandhan.wedding" />
     <meta
       name="description"
-      content="Jax and Ste got married - it's time to celebrate."
+      content="Dan & Han are getting married - it's time to celebrate."
     />
-    <meta itemprop="name" content="Ste & Jax Wedding Celebration 2022" />
+    <meta itemprop="name" content="Dan & Han Wedding 2022" />
+    <meta itemprop="description" content="Dan & Han are getting married." />
     <meta
-      itemprop="description"
-      content="Jax and Ste got married - it's time to celebrate."
+      itemprop="image"
+      content="https://danandhan.wedding/img/SocialCover.png"
     />
-    <meta itemprop="image" content="https://pammenter.wedding/img/SocialCover.png">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@svenpam" />
-    <meta name="twitter:title" content="Ste & Jax Wedding Celebration" />
+    <meta name="twitter:title" content="Dan & Han Wedding 2022" />
+    <meta name="twitter:description" content="Dan & Han are getting married." />
     <meta
-      name="twitter:description"
-      content="Jax and Ste got married - it's time to celebrate."
+      name="twitter:image:src"
+      content="https://danandhan.wedding/img/SocialCover.png"
     />
-    <meta name="twitter:image:src" content="https://pammenter.wedding/img/SocialCover.png">
+    <meta property="og:title" content="Dan & Han Wedding 2022" />
+    <meta property="og:url" content="https://danandhan.wedding" />
     <meta
-      property="og:title"
-      content="Ste & Jax Wedding Celebration 2022"
+      property="og:image"
+      content="https://danandhan.wedding/img/SocialCover.png"
     />
-    <meta property="og:url" content="https:/pammenter.wedding" />
-    <meta property="og:image" content="https://pammenter.wedding/img/SocialCover.png" />
-    <meta
-      property="og:description"
-      content="Jax and Ste got married - it's time to celebrate."
-    />
-    <meta property="og:site_name" content="Ste & Jax Wedding" />
+    <meta property="og:description" content="Dan & Han are getting married." />
+    <meta property="og:site_name" content="Dan & Han Wedding" />
     <meta property="og:type" content="website" />
     <meta name="msapplication-TileColor" content="#465741" />
     <meta name="theme-color" content="#ffffff" />
@@ -52,29 +79,34 @@
       {
         "@context": "https://schema.org",
         "@type": "SocialEvent",
-        "name": "Ste and Jax Wedding Reception",
-        "url": "https:/pammenter.wedding",
-        "startDate" : "2022-05-28T13:00:00+00:00",
-        "endDate" : "2022-05-28T23:30:00+00:00",
+        "name": "Dan & Han Wedding Day",
+        "url": "https://danandhan.wedding",
+        "startDate": "2022-05-28T13:00:00+00:00",
+        "endDate": "2022-05-28T23:30:00+00:00",
         "location": {
           "@type": "Place",
-          "name": "Yew Tree Farm",
-          "url": "http://www.yewtree-farm.com",
-          "latitude":"54.38957",
-          "longitude":"-3.04947",
+          "name": "Bashall Barn",
+          "url": "https://www.bashallbarn.co.uk/",
+          "latitude": "53.874236463230176",
+          "longitude": " -2.441109730788618",
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "GB",
-            "addressLocality": "Coniston",
-            "addressRegion": "Cumbria",
-            "postalCode": "LA21 8DP",
-            "streetAddress": "Yew Tree Farm"
+            "addressLocality": "Clitheroe",
+            "addressRegion": "Lancahsire",
+            "postalCode": "BB7 3LQ",
+            "streetAddress": "Bashall Barn"
           }
         }
       }
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="theme--tertiary">
+  <body>
     <div id="app"></div>
   </body>
 </html>
