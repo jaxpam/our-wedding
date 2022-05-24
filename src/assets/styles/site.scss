@@ -14,31 +14,45 @@ $theme-colors: map-merge(
   @include img-fluid();
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Playfair+Display:wght@400;700&display=swap");
-@include media-breakpoint-up(md) {
-  body {
-    font-size: 1.125rem;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Playfair+Display:wght@400;700&display=swap');
 
-  h1,
-  .h1 {
-    font-size: 5rem;
-  }
-
-  h2,
-  .h2 {
-    font-size: 4rem;
-  }
-}
+$heading-sizes: $h1-font-size $h2-font-size $h3-font-size $h4-font-size
+  $h5-font-size; //in order from h1 to h5
+$heading-sizes-sm: $h1-font-size-sm $h2-font-size-sm $h3-font-size-sm
+  $h4-font-size-sm $h5-font-size-sm;
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: $headings-margin-bottom;
   font-family: "sheenazregular";
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
 }
 
-h2 {
-  @include media-breakpoint-down(sm) {
-    font-size: 4rem;
+@for $i from 1 through length($heading-sizes-sm) {
+  h#{$i},
+  .h#{$i} {
+    font-size: nth($heading-sizes-sm, $i);
+  }
+}
+
+@for $i from 1 through length($heading-sizes) {
+  h#{$i},
+  .h#{$i} {
+    @include media-breakpoint-up(md) {
+      font-size: nth($heading-sizes, $i);
+    }
   }
 }
 
@@ -62,9 +76,36 @@ small,
   margin-bottom: 0;
 }
 
+.lead {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+
+  @include media-breakpoint-down(md) {
+    height: 100vh;
+  }
+}
+
+.navbar-nav {
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+    height: 100%;
+  }
+}
+
 .hero-img {
   display: flex;
   justify-content: center;
+}
+
+.mast-head-img {
+  @include media-breakpoint-down(md) {
+    height: 50vh;
+    width: auto;
+  }
 }
 
 .hero-text {
@@ -76,8 +117,11 @@ small,
   color: $light;
   padding: 4rem 2rem;
 
+  @include media-breakpoint-up(lg) {
+    margin-left: -3rem;
+  }
   @include media-breakpoint-up(xl) {
-    margin-left: -2rem;
+    margin-left: -8rem;
   }
 }
 
@@ -125,13 +169,12 @@ small,
 }
 
 .btn {
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   padding: 1rem;
-
-  @include media-breakpoint-down(sm) {
-    width: 100%;
-    padding: 1rem;
-  }
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: $font-weight-lighter;
 }
 
 .location-img {
