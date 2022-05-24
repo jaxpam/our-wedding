@@ -6,7 +6,7 @@
         <div class="row justify-content-center align-items-center py-3 py-lg-5">
           <div class="col-auto hero-img pe-xl-5">
             <img
-              class="img-fluid"
+              class="img-fluid mast-head-img"
               src="../assets/img/dan-and-han.png"
               alt=""
               width="400"
@@ -14,11 +14,11 @@
             />
           </div>
           <div class="col-12 col-lg-5 col-xl-4 hero-text">
-            <h5 class="mb-4">Celebrate with us</h5>
+            <h5 class="mb-lg-4">Celebrate with us</h5>
             <h1 class="h2 text-center mb-0">
               Hannah Sanderson<br />+<br />Daniel Holden
             </h1>
-            <h5 class="mt-4">Bashall Barn | Clitheroe</h5>
+            <h5 class="mt-2 mt-lg-4">Bashall Barn | Clitheroe</h5>
           </div>
         </div>
         <h3 class="hero-time">Monday, 24th October 2022</h3>
@@ -27,7 +27,7 @@
     <section class="details bg-secondary py-3">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-md-5 text-end">
+          <div class="col-12 col-md-5 text-center text-lg-end">
             <img
               class="img-fluid m-lg-3 mb-2"
               src="../assets/img/bashall.jpg"
@@ -37,21 +37,17 @@
             />
           </div>
           <div class="col-12 col-md-5">
-            <h3 class="text-white">
-              Fugiat et aliquip non minim amet. Laboris cillum incididunt
-              pariatur reprehenderit cupidatat do eu consequat incididunt
-              aliquip ea tempor.
-              <br />
-              <br />
-              Elit velit ad sit ullamco magna. Veniam magna consectetur ex
-              adipisicing non irure enim tempor nulla do.
+            <h3 class="lead text-white mb-3">
+              All we really want for our wedding day is for you to be there to
+              celebrate with us. However, if you'd like to give us a gift, a
+              contribution towards our honeymoon would be greatly appreciated.
             </h3>
             <ul class="list-unstyled">
-              <li class="text-white">
+              <li class="text-white mb-3">
                 <small class="text-uppercase">Ceremony</small>
                 <br />
                 <p class="time fw-bold">1:00PM – 2:00PM</p>
-                <h5>Twitter Lane, Clitheroe, Lancashire, BB7 3LQ</h5>
+                <small>Twitter Lane, Clitheroe, Lancashire, BB7 3LQ</small>
               </li>
               <li class="text-white">
                 <small class="text-uppercase">Reception to follow</small>
@@ -99,7 +95,7 @@
             />
 
             <h2 class="h1 text-lowercase title-underline">Things to note</h2>
-            <ul class="list-unstyled mt-4">
+            <ul class="list-unstyled mt-4 mx-3">
               <li>
                 <p>
                   Please note, no confetti to be used during any part of the
@@ -120,7 +116,7 @@
     </section>
     <section class="bg-light pb-3">
       <div class="container">
-        <div class="row justify-content-center mb-5 pt-5">
+        <div class="row justify-content-center mb-5 pt-3">
           <h2 class="h1 mb-0 text-lowercase text-center title-underline">
             Accomodation
           </h2>
@@ -132,6 +128,7 @@
                 src="../assets/img/accomodation-01.jpg"
                 class="img-fluid"
                 alt="Ribble Valley Country Cottages"
+                loading="lazy"
               />
             </div>
             <div class="col-md-6">
@@ -158,6 +155,7 @@
                 src="../assets/img/accomodation-02.jpg"
                 class="img-fluid"
                 alt="Coach and Horses Ribble Valley"
+                loading="lazy"
               />
             </div>
             <div class="col-md-6">
@@ -184,6 +182,7 @@
                 src="../assets/img/accomodation-03.jpg"
                 class="img-fluid"
                 alt="Shireburn Arms Hotel"
+                loading="lazy"
               />
             </div>
             <div class="col-md-6">
@@ -207,6 +206,7 @@
                 src="../assets/img/accomodation-04.jpg"
                 class="img-fluid"
                 alt="Holmesmill"
+                loading="lazy"
               />
             </div>
             <div class="col-md-6">

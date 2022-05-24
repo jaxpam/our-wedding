@@ -3,7 +3,7 @@
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand m-0" href="#">
             <img
               class="img-fluid"
               src="@/assets/img/logo.svg"
@@ -12,23 +12,18 @@
               height="60"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active py-1 px-3" aria-current="page" href="#">The Details</a>
+
+          <div id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item d-none d-lg-block">
+                <a
+                  class="nav-link py-1 px-3 btn btn-tertiary"
+                  aria-current="page"
+                  href="#"
+                  >The Details</a
+                >
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-lg-block">
                 <a class="nav-link btn btn-primary py-1 px-3" href="#">RSVP</a>
               </li>
             </ul>
@@ -50,9 +45,14 @@ export default class Header extends Vue {}
 @import "../assets/styles/site.scss";
 
 .header {
+  font-family: "Playfair Display", serif;
+
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+  }
+
   nav {
     position: sticky;
   }
 }
-
 </style>
