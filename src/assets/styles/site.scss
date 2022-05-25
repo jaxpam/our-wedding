@@ -177,6 +177,18 @@ small,
   font-weight: $font-weight-lighter;
 }
 
+.btn-rsvp {
+  background-color: $navy;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: darken($navy, .5);
+  }
+}
+
 .location-img {
   display: block;
   background-repeat: no-repeat;
