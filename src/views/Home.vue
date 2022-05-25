@@ -8,6 +8,7 @@
             <img
               class="img-fluid mast-head-img"
               src="../assets/img/dan-and-han.png"
+              :srcset="require('../assets/img/dan-and-han.png')"
               alt=""
               width="400"
               height="600"
@@ -31,6 +32,7 @@
             <img
               class="img-fluid m-lg-3 mb-2"
               src="../assets/img/bashall.jpg"
+              :srcset="require('@/assets/img/bashall.jpg')"
               alt=""
               width="300"
               height="400"
@@ -66,6 +68,7 @@
             <img
               class="botanical-stem d-none d-lg-block"
               src="../assets/img/stem.svg"
+              :srcset="require('../assets/img/stem.svg')"
               width="100"
               height="300"
               alt="botanical stem"
@@ -89,6 +92,7 @@
             <img
               class="eucalyptus d-none d-lg-block"
               src="../assets/img/euc.svg"
+              :srcset="require('../assets/img/euc.svg')"
               width="100"
               height="300"
               alt="eucalyptus"
@@ -126,6 +130,7 @@
             <div class="col-md-6">
               <img
                 src="../assets/img/accomodation-01.jpg"
+                :srcset="require('../assets/img/accomodation-01.jpg')"
                 class="img-fluid"
                 alt="Ribble Valley Country Cottages"
                 loading="lazy"
@@ -153,6 +158,7 @@
             <div class="col-md-6">
               <img
                 src="../assets/img/accomodation-02.jpg"
+                :srcset="require('../assets/img/accomodation-02.jpg')"
                 class="img-fluid"
                 alt="Coach and Horses Ribble Valley"
                 loading="lazy"
@@ -180,6 +186,7 @@
             <div class="col-md-6">
               <img
                 src="../assets/img/accomodation-03.jpg"
+                :srcset="require('../assets/img/accomodation-03.jpg')"
                 class="img-fluid"
                 alt="Shireburn Arms Hotel"
                 loading="lazy"
@@ -188,7 +195,6 @@
             <div class="col-md-6">
               <div class="card-body">
                 <h3 class="card-title">Shireburn Arms</h3>
-
                 <a
                   href="https://www.shireburnarmshotel.co.uk/"
                   target="_blank"
@@ -204,6 +210,7 @@
             <div class="col-md-6">
               <img
                 src="../assets/img/accomodation-04.jpg"
+                :srcset="require('../assets/img/accomodation-04.jpg')"
                 class="img-fluid"
                 alt="Holmesmill"
                 loading="lazy"
