@@ -24,7 +24,7 @@
                 >
               </li>
               <li class="nav-item d-none d-lg-block">
-                <a class="nav-link btn btn-primary py-1 px-3" href="#">RSVP</a>
+                <a class="nav-link btn btn-primary py-1 px-3" href="#rsvp" data-scroll>RSVP</a>
               </li>
             </ul>
           </div>

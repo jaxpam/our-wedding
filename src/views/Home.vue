@@ -25,7 +25,7 @@
         <h3 class="hero-time">Monday, 24th October 2022</h3>
       </div>
     </section>
-    <section class="h-100">
+    <section id="rsvp" class="h-100">
       <div class="container py-5">
         <h2 class="h1 text-uppercase text-center pb-3">RSVP</h2>
         <div class="row">
