@@ -89,10 +89,15 @@ small,
   }
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar-nav {
   @include media-breakpoint-down(md) {
-    justify-content: center;
-    height: 100%;
+    justify-content: space-evenly;
+    height: 50vh;
   }
 }
 
@@ -178,7 +183,7 @@ small,
 }
 
 .btn-rsvp {
-  background-color: $navy;
+  background-color: $secondary;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -189,6 +194,10 @@ small,
   }
 }
 
+.image-wrapper {
+  position: relative;
+}
+
 .location-img {
   display: block;
   background-repeat: no-repeat;
@@ -197,11 +206,11 @@ small,
 }
 
 .botanical-stem {
-  transform: rotate(10deg);
+  transform: rotate(0deg);
   width: 100%;
   overflow: hidden;
   position: absolute;
-  right: -40%;
+  right: -170%;
 }
 
 .eucalyptus {

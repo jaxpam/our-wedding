@@ -22,44 +22,51 @@
             <h5 class="mt-2 mt-lg-4">Bashall Barn | Clitheroe</h5>
           </div>
         </div>
-        <h3 class="hero-time">Monday, 24th October 2022</h3>
+        <h3 class="hero-time">
+          Monday, 24th October 2022 |
+          <time datetime="2018-10-24T13:00:00">13:00</time>
+        </h3>
       </div>
     </section>
     <section id="rsvp" class="h-100">
-      <div class="container py-5">
+      <div class="container pt-5">
         <h2 class="h1 text-uppercase text-center pb-3">RSVP</h2>
-        <div class="row">
-          <div class="col-6">
+        <div class="row rsvp-buttons vh-30 justify-content-between">
+          <div class="col-12 col-lg-6">
             <a
-              class="nav-link py-1 px-3 btn btn-lg btn-rsvp"
+              class="nav-link py-lg-1 px-lg-3 btn btn-lg btn-rsvp"
               aria-current="page"
-              href="mailto:emailgoeshere@email.com?subject=Yes!%20Accept%20with%20pleasure&body=Please%20update%20this%20text%20here%2C%20and%20let%20us%20know%20who's%20coming%2C%20and%20if%20you%20have%20any%20dietary%20requirements." target="_blank"
+              href="mailto:danandhan2410@gmail.com?subject=Yes!%20Accept%20with%20pleasure&body=Please%20update%20this%20text%20here%2C%20and%20let%20us%20know%20who's%20coming%2C%20and%20if%20you%20have%20any%20dietary%20requirements."
+              target="_blank"
               >Yes! Accept with pleasure</a
             >
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <a
-              class="nav-link py-1 px-3 btn btn-lg btn-rsvp"
+              class="nav-link py-lg-1 px-lg-3 btn btn-lg btn-rsvp"
               aria-current="page"
-              href="mailto:emailgoeshere@email.com?subject=Decline%20with%20regret&body=Unfortunately%2C%20I%20am%2F%20we%20are%20unable%20to%20join%20you%20on%20your%20special%20day!" target="_blank"
+              href="mailto:danandhan2410@gmail.com?subject=Decline%20with%20regret&body=Unfortunately%2C%20I%20am%2F%20we%20are%20unable%20to%20join%20you%20on%20your%20special%20day!"
+              target="_blank"
               >Decline with regret</a
             >
           </div>
         </div>
       </div>
     </section>
-    <section class="details bg-secondary py-3">
+    <section id="details" class="details bg-secondary py-3">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-5 text-center text-lg-end">
-            <img
-              class="img-fluid m-lg-3 mb-2"
-              src="@/assets/img/bashall.jpg"
-              :srcset="require('@/assets/img/bashall.jpg?srcset')"
-              alt=""
-              width="300"
-              height="400"
-            />
+            <div class="image-wrapper">
+              <img
+                class="img-fluid m-lg-3 mb-2"
+                src="@/assets/img/bashall.jpg"
+                :srcset="require('@/assets/img/bashall.jpg?srcset')"
+                alt=""
+                width="300"
+                height="400"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-5">
             <h3 class="lead text-light mb-3">
@@ -71,13 +78,18 @@
               <li class="text-light mb-3">
                 <small class="text-uppercase">Ceremony</small>
                 <br />
-                <p class="time fw-bold">1:00PM – 2:00PM</p>
+                <p class="time fw-bold">
+                  <time datetime="13:00">13:00</time> –
+                  <time datetime="14:00">14:00</time>
+                </p>
                 <small>Twitter Lane, Clitheroe, Lancashire, BB7 3LQ</small>
               </li>
               <li class="text-light">
                 <small class="text-uppercase">Reception to follow</small>
                 <br />
-                <p class="time fw-bold">7.30PM - until late</p>
+                <p class="time fw-bold">
+                  <time datetime="19:30">19:30</time> - until late
+                </p>
               </li>
             </ul>
           </div>
@@ -88,14 +100,16 @@
       <div class="container bg-primary pt-3 pb-5">
         <div class="row botanical">
           <div class="col-12 col-lg-4 offset-lg-2">
-            <img
-              class="botanical-stem d-none d-lg-block"
-              src="@/assets/img/stem.svg"
-              :srcset="require('@/assets/img/stem.svg?srcset')"
-              width="100"
-              height="300"
-              alt="botanical stem"
-            />
+            <div class="image-wrapper">
+              <img
+                class="botanical-stem d-none d-lg-block"
+                src="@/assets/img/stem.svg"
+                :srcset="require('@/assets/img/stem.svg?srcset')"
+                width="100"
+                height="300"
+                alt="botanical stem"
+              />
+            </div>
             <h2 class="h1 text-lowercase title-underline">Time</h2>
             <ul class="list-unstyled mt-4">
               <li class="text-center text-lg-start">
@@ -105,7 +119,7 @@
                 </p>
               </li>
               <li class="text-center text-lg-start">
-                <h4>Eagle Taxis 01200 222 222</h4>
+                <h4 href="tel:+441200222222">Eagle Taxis 01200 222 222</h4>
               </li>
             </ul>
           </div>
@@ -283,7 +297,11 @@
             <h5 class="text-center mb-3">
               If you'd like to ask us any questions…
             </h5>
-            <a class="btn btn-primary w-100" href="#">Email Us</a>
+            <a
+              class="btn btn-primary w-100"
+              href="mailto:danandhan2410@gmail.com?subject=I%20%2F%20We%20have%20some%20question&body=Please%20delete%20this%20line%2C%20and%20enter%20your%20question%20here"
+              >Email Us</a
+            >
           </div>
           <div class="col-12 col-md-5 text-center text-md-end">
             <img
@@ -320,5 +338,9 @@ footer {
   background-color: $navy;
   color: $white;
   padding: 3rem 0;
+}
+
+.rsvp-buttons {
+  height: 30vh;
 }
 </style>
