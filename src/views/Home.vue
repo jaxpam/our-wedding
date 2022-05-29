@@ -7,8 +7,8 @@
           <div class="col-auto hero-img pe-xl-5">
             <img
               class="img-fluid mast-head-img"
-              src="../assets/img/dan-and-han.png"
-              :srcset="require('../assets/img/dan-and-han.png')"
+              src="@/assets/img/dan-and-han.png"
+              :srcset="require('@/assets/img/dan-and-han.png?srcset')"
               alt=""
               width="400"
               height="600"
@@ -25,33 +25,56 @@
         <h3 class="hero-time">Monday, 24th October 2022</h3>
       </div>
     </section>
+    <section class="h-100">
+      <div class="container py-5">
+        <h2 class="h1 text-uppercase text-center pb-3">RSVP</h2>
+        <div class="row">
+          <div class="col-6">
+            <a
+              class="nav-link py-1 px-3 btn btn-lg btn-rsvp"
+              aria-current="page"
+              href="mailto:emailgoeshere@email.com?subject=Yes!%20Accept%20with%20pleasure&body=Please%20update%20this%20text%20here%2C%20and%20let%20us%20know%20who's%20coming%2C%20and%20if%20you%20have%20any%20dietary%20requirements." target="_blank"
+              >Yes! Accept with pleasure</a
+            >
+          </div>
+          <div class="col-6">
+            <a
+              class="nav-link py-1 px-3 btn btn-lg btn-rsvp"
+              aria-current="page"
+              href="mailto:emailgoeshere@email.com?subject=Decline%20with%20regret&body=Unfortunately%2C%20I%20am%2F%20we%20are%20unable%20to%20join%20you%20on%20your%20special%20day!" target="_blank"
+              >Decline with regret</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="details bg-secondary py-3">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-5 text-center text-lg-end">
             <img
               class="img-fluid m-lg-3 mb-2"
-              src="../assets/img/bashall.jpg"
-              :srcset="require('@/assets/img/bashall.jpg')"
+              src="@/assets/img/bashall.jpg"
+              :srcset="require('@/assets/img/bashall.jpg?srcset')"
               alt=""
               width="300"
               height="400"
             />
           </div>
           <div class="col-12 col-md-5">
-            <h3 class="lead text-white mb-3">
+            <h3 class="lead text-light mb-3">
               All we really want for our wedding day is for you to be there to
               celebrate with us. However, if you'd like to give us a gift, a
               contribution towards our honeymoon would be greatly appreciated.
             </h3>
             <ul class="list-unstyled">
-              <li class="text-white mb-3">
+              <li class="text-light mb-3">
                 <small class="text-uppercase">Ceremony</small>
                 <br />
                 <p class="time fw-bold">1:00PM – 2:00PM</p>
                 <small>Twitter Lane, Clitheroe, Lancashire, BB7 3LQ</small>
               </li>
-              <li class="text-white">
+              <li class="text-light">
                 <small class="text-uppercase">Reception to follow</small>
                 <br />
                 <p class="time fw-bold">7.30PM - until late</p>
@@ -67,8 +90,8 @@
           <div class="col-12 col-lg-4 offset-lg-2">
             <img
               class="botanical-stem d-none d-lg-block"
-              src="../assets/img/stem.svg"
-              :srcset="require('../assets/img/stem.svg')"
+              src="@/assets/img/stem.svg"
+              :srcset="require('@/assets/img/stem.svg?srcset')"
               width="100"
               height="300"
               alt="botanical stem"
@@ -78,7 +101,7 @@
               <li class="text-center text-lg-start">
                 <p>
                   Please book a taxi ahead of time <br />
-                  <strong>Before 1:00 am</strong>
+                  <strong>Before 12:30 am</strong>
                 </p>
               </li>
               <li class="text-center text-lg-start">
@@ -91,8 +114,8 @@
           <div class="col-12 col-lg-6 offset-lg-5">
             <img
               class="eucalyptus d-none d-lg-block"
-              src="../assets/img/euc.svg"
-              :srcset="require('../assets/img/euc.svg')"
+              src="@/assets/img/euc.svg"
+              :srcset="require('@/assets/img/euc.svg?srcset')"
               width="100"
               height="300"
               alt="eucalyptus"
@@ -129,8 +152,8 @@
           <div class="row g-0">
             <div class="col-md-6">
               <img
-                src="../assets/img/accomodation-01.jpg"
-                :srcset="require('../assets/img/accomodation-01.jpg')"
+                src="@/assets/img/accomodation-01.jpg"
+                :srcset="require('@/assets/img/accomodation-01.jpg?srcset')"
                 class="img-fluid"
                 alt="Ribble Valley Country Cottages"
                 loading="lazy"
@@ -157,8 +180,8 @@
           <div class="row g-0">
             <div class="col-md-6">
               <img
-                src="../assets/img/accomodation-02.jpg"
-                :srcset="require('../assets/img/accomodation-02.jpg')"
+                src="@/assets/img/accomodation-02.jpg"
+                :srcset="require('@/assets/img/accomodation-02.jpg?srcset')"
                 class="img-fluid"
                 alt="Coach and Horses Ribble Valley"
                 loading="lazy"
@@ -185,8 +208,8 @@
           <div class="row g-0">
             <div class="col-md-6">
               <img
-                src="../assets/img/accomodation-03.jpg"
-                :srcset="require('../assets/img/accomodation-03.jpg')"
+                src="@/assets/img/accomodation-03.jpg"
+                :srcset="require('@/assets/img/accomodation-03.jpg?srcset')"
                 class="img-fluid"
                 alt="Shireburn Arms Hotel"
                 loading="lazy"
@@ -209,8 +232,8 @@
           <div class="row g-0">
             <div class="col-md-6">
               <img
-                src="../assets/img/accomodation-04.jpg"
-                :srcset="require('../assets/img/accomodation-04.jpg')"
+                src="@/assets/img/accomodation-04.jpg"
+                :srcset="require('@/assets/img/accomodation-04.jpg?srcset')"
                 class="img-fluid"
                 alt="Holmesmill"
                 loading="lazy"
@@ -238,7 +261,7 @@
     </section>
     <section
       class="location-img h-100"
-      style="background-image: url('@/assets/img/hills.png'); background-size: cover; background-position: center center;"
+      style="background-image: url('../assets/img/hills.png'); background-size: cover; background-position: center center;"
     >
       <div class="container py-5">
         <div class="row">
@@ -246,7 +269,7 @@
             <h4 class="text-white">
               Set in the heart of Lancashire, with panoramic views across the
               Ribble Valley. <br /><br />
-              Once you see our venue, you’ll see why we fell in love with it..
+              Once you see our venue, you'll see why we fell in love with it..
               with the rolling hills, rustic charm and stunning location.
             </h4>
           </div>
@@ -265,7 +288,8 @@
           <div class="col-12 col-md-5 text-center text-md-end">
             <img
               class="img-fluid"
-              src="../assets/img/logo-white.svg"
+              src="@/assets/img/logo-white.svg"
+              :srcset="require('@/assets/img/logo-white.svg?srcset')"
               alt=""
               width="100"
               height="60"
