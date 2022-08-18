@@ -7,8 +7,8 @@
           <div class="col-auto hero-img pe-xl-5">
             <img
               class="img-fluid mast-head-img"
-              src="@/assets/img/dan-and-han.png"
-              :srcset="require('@/assets/img/dan-and-han.png?srcset')"
+              src="@/assets/img/dan-and-han.jpg"
+              :srcset="require('@/assets/img/dan-and-han.jpg?srcset')"
               alt=""
               width="400"
               height="600"
